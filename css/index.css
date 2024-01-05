@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,800&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+  font-family: "Rubik", sans-serif;
+}
+
+.page-nav {
+  background: #f6f6f6;
+  padding: 12px;
+  box-shadow: 1px 1px 13px 0px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+.nav-body img {
+  height: 64px;
+  mix-blend-mode: multiply;
+}
+.nav-body a {
+  text-decoration: none;
+  color: black;
+  color: inherit;
+}
+.nav-body a:hover {
+  color: #444;
+}
+.list .current {
+  color: red;
+}
+
+.nav-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 260px;
+
+  font-size: 18px;
+}
+
+.nav-body .list {
+  list-style-type: none;
+  padding: 0;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  gap: 12px;
+  text-transform: uppercase;
+}
+
+.shop {
+  position: relative;
+}
+
+.shop-hide {
+  position: absolute;
+  background-color: #f8f8f8;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 12px 32px;
+  width: 300px;
+  list-style: none;
+
+  display: none;
+}
+
+.shop:hover .shop-hide {
+  display: block;
+}
