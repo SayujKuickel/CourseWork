@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: "DM Sans", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.page-nav {
+  position: static;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  width: 100%;
+  height: 80px;
+  padding: 0 32px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+
+.logo-container .material-symbols-outlined {
+  font-weight: 300;
+  font-size: 3rem;
+  color: #ff4d4d;
+}
+
+.logo-container p {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-left: 0.5rem;
+  /* color:#ff4d4d; */
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.4rem;
+  font-weight: 600;
+  font-size: 1.24rem;
+}
+
+.nav-links div {
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.3s;
+}
+
+.nav-links div:hover {
+  color: #ff4d4d; /* Red color on hover */
+}
+
+.icons-container {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.icons-container .material-symbols-outlined {
+  font-size: 1.6rem;
+  cursor: pointer;
+  user-select: none;
+}
+.icons-container .material-symbols-outlined:hover {
+  color: #ff4d4d; /* Red color on hover */
+}
+.content {
+  /* background-color: red; */
+  /* margin-top: var(--nav-height); */
+  /* background-image: url(../assets/bg.webp); */
+}
+
+footer {
+  height: 300px;
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/index.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/components.css" />
+    k
+
+    <!-- <link rel="stylesheet" href="/css/index.css" /> -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="page-nav">
+      <div class="logo-container">
+        <span class="material-symbols-outlined">print</span>
+        <p>Printify</p>
+      </div>
+
+      <div class="nav-links">
+        <div>HOME</div>
+        <div>BLOG</div>
+        <div>SHOP</div>
+        <div>ABOUT US</div>
+        <div>CONTACT</div>
+      </div>
+
+      <div class="icons-container">
+        <span class="material-symbols-outlined">search</span>
+        <span class="material-symbols-outlined">settings</span>
+        <span class="material-symbols-outlined">shopping_cart</span>
+        <a href="/products.html"
+          ><button class="btn btn-primary">Shop Now</button></a
+        >
+      </div>
+    </nav>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .hero-section {
+          @apply relative flex justify-center  w-full h-[960px] outline-2 shadow-lg pb-1;
+        }
+        .hero-section video {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    </style>
+
+    <section class="hero-section">
+      <video loop autoplay muted>
+        <source src="./assets/video.mp4" type="video/mp4" />
+      </video>
+    </section>
+
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .desc-wrapper {
+          @apply flex flex-col items-center justify-center my-36 py-8;
+        }
+        .desc-wrapper-inner {
+          @apply w-[700px] text-center flex flex-col gap-4 items-center;
+        }
+        .desc-wrapper-inner h1 {
+          @apply text-4xl font-bold;
+        }
+        .desc-wrapper-inner p {
+          @apply text-xl;
+        }
+        .desc-wrapper-inner button {
+          @apply mt-8;
+        }
+      }
+    </style>
+    <section class="desc-wrapper">
+      <div class="desc-wrapper-inner">
+        <h1>Stylish Solutions</h1>
+        <p>
+          Unleash your imagination and create your small home office. Whether
+          you are home schooling, working or being creative, Our printers are
+          designed to fit your lifestyle.
+        </p>
+        <button class="btn btn-primary shadow-sm">Shop Now</button>
+      </div>
+    </section>
+
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .banner-description-section {
+          @apply relative my-8;
+        }
+        .banner-description-section img {
+          @apply w-full h-[500px] object-cover brightness-50;
+        }
+        .banner-description-section .content-wrapper {
+          @apply flex flex-col items-center justify-center gap-3 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-full text-center py-3;
+        }
+        .banner-description-section .content-wrapper h1 {
+          @apply text-5xl text-white font-bold;
+        }
+        .banner-description-section .content-wrapper p {
+          @apply text-xl font-semibold text-white;
+        }
+        .banner-description-section .content-wrapper button {
+          @apply mt-8;
+        }
+      }
+    </style>
+    <section class="banner-description-section">
+      <img src="./assets/bg.webp" alt="bg" class="" />
+      <!-- 569 x 295 -->
+      <div class="content-wrapper">
+        <h1>Print Your Heart out!</h1>
+        <p class="">
+          Empower Your Imagination: Unleash Creativity with Precision – Print
+          Perfection Awaits at <span class="text-red-500">Printify</span>
+        </p>
+        <a href="./products.html">
+          <button class="btn btn-primary">Explore Our Printers</button>
+        </a>
+      </div>
+    </section>
+
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .printers-wrapper {
+          @apply mt-32 px-24;
+        }
+        .printers-wrapper > h1 {
+          @apply text-3xl font-[500];
+        }
+        .printers-wrapper > p {
+          @apply text-lg mb-8;
+        }
+        .printers-wrapper .printers-row {
+          @apply w-full flex justify-between mt-3;
+        }
+        .printers-wrapper .printers-row .printer-item {
+          @apply w-[400px] flex flex-col gap-1 cursor-pointer hover:scale-105 transition-all;
+        }
+      }
+    </style>
+    <section class="printers-wrapper">
+      <h1>Printer Ranges</h1>
+      <p>
+        Our high-quality printers for the home, office or hybrid workspace are
+        built to deliver every time.
+      </p>
+      <div class="printers-row">
+        <div class="printer-item">
+          <img src="./assets/HomePrinter.webp" alt="HomePrinter" class="" />
+          <p class="text-lg">Portable Printers</p>
+          <p class="text-gray-400">
+            Print memories on-the-go with a small and lightweight portable
+            printer.
+          </p>
+        </div>
+        <div class="printer-item">
+          <img src="./assets/WirelessPrinter.webp" alt="HomePrinter" class="" />
+          <p class="text-lg">Wireless Printers</p>
+          <p class="text-gray-400">
+            Connect your Wi-Fi printer to your device or network so that you can
+            print from anywhere in your home or office without needing to be in
+            the room
+          </p>
+        </div>
+        <div class="printer-item">
+          <img src="./assets/MegatankPrinters.webp" alt="HomePrinter" />
+          <p class="text-lg">MegaTank Printers</p>
+          <p class="text-gray-400">
+            Enjoy high quality performance, low cost prints and ultimate
+            convenience with the series of refillable ink tank printers.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-center mt-8">
+        <a href="./products.html" class="btn btn-primary w-[10rem] scale-110"
+          >Buy now</a
+        >
+      </div>
+    </section>
+
+    <footer class="mt-36 bg-red-50 h-10"></footer>
+  </body>
+</html>
