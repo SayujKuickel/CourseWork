@@ -97,13 +97,7 @@ const fetchProducts = async ()=>{
         productContainer.appendChild(generateProduct);
     })
         // Check if generateProduct is a valid DOM node before appending
-
-
-
     // const productsWrapper = document.getElementsByClassName("products-wrapper");
-
-
-
 }
 
 
