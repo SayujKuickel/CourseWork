@@ -1,9 +1,28 @@
 @font-face {
   font-family: "CabinetGrotesk";
-  src: url("/fonts/CabinetGrotesk-Variable.woff2");
+  src: url("../assets/fonts/CabinetGrotesk-Variable.woff2");
 }
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 body {
-  font-family: "CabinetGrotesk";
+  font-family: "CabinetGrotesk", sans-serif;
+}
+
+img,
+picture,
+video {
+  max-width: 100%;
+  display: block;
 }
 
 /* navbar styles */
@@ -25,24 +44,20 @@ body {
 .logo-container {
   display: flex;
   align-items: center;
-  user-select: none;
 }
 
-.logo-container .material-symbols-outlined {
-  font-weight: 300;
-  font-size: 48px;
-  color: #ff4d4d;
-}
 .logo-container p {
   font-size: 32px;
   font-weight: 600;
   margin-left: 8px;
 }
+
 .nav-links {
   display: flex;
-  gap: 40px;
+  gap: 32px;
   font-weight: 600;
   font-size: 19.84px;
+  text-transform: uppercase;
 }
 
 .nav-links a {
@@ -64,8 +79,14 @@ body {
   transform: scaleX(0);
   transition: ease-in-out 200ms transform;
 }
+
 .nav-links a:hover::after {
   transform: scaleX(1);
+}
+
+.page-nav .icons-container {
+  display: flex;
+  gap: 16px;
 }
 
 /*  */
@@ -86,24 +107,25 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+
 .btn-primary {
   background: rgb(220 38 38);
   color: white;
 }
+
 .btn:hover,
 .btn-primary:hover {
   color: white;
-  background: rgb(252, 74, 74);
+  cursor: pointer;
+  background: rgb(158, 31, 31);
+  border: transparent;
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-}
-
-.discount {
-  color: #34d399;
 }
 
 /*  */
 /* page half banner */
 /*  */
+
 .page-half-banner {
   padding-inline: 80px;
   margin-block: 40px;
