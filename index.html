@@ -12,7 +12,7 @@
   <body>
     <header class="page-nav">
       <div class="logo-container">
-        <span class="material-symbols-outlined">print</span>
+        <img src="./assets/icons/printer.svg" alt="logo" />
         <p>Printify</p>
       </div>
 
@@ -25,10 +25,11 @@
       </nav>
 
       <nav class="icons-container">
-        <span class="material-symbols-outlined">search</span>
-        <span class="material-symbols-outlined">settings</span>
-        <span class="material-symbols-outlined">shopping_cart</span>
-        <a href="/products.html">
+        <img src="./assets/icons/search.svg" alt="logo" />
+        <img src="./assets/icons/shoppingCard.svg" alt="logo" />
+        <img src="./assets/icons/settings-icon.svg" alt="logo" />
+
+        <a href="./products.html">
           <button class="btn btn-primary">Shop Now</button>
         </a>
       </nav>
@@ -53,7 +54,10 @@
     </section>
 
     <section class="banner-description-section">
-      <img src="./assets/bg.webp" alt="bg" class="" />
+      <img
+        src="./assets/indexImage/bg.webp"
+        alt="background image for print your heart out section"
+      />
       <!-- 569 x 295 -->
       <div class="content-wrapper">
         <h1>Print Your Heart out!</h1>
@@ -75,36 +79,53 @@
       </p>
       <div class="printers-row">
         <div class="printer-item">
-          <img src="./assets/HomePrinter.webp" alt="HomePrinter" class="" />
-          <p class="text-lg">Portable Printers</p>
-          <p class="text-gray-400">
+          <img
+            src="./assets/indexImage/HomePrinter.webp"
+            alt="HomePrinter"
+            class=""
+          />
+          <p style="font-size: 18px">Portable Printers</p>
+          <p style="color: #9ca3af">
             Print memories on-the-go with a small and lightweight portable
             printer.
           </p>
         </div>
         <div class="printer-item">
-          <img src="./assets/WirelessPrinter.webp" alt="HomePrinter" class="" />
-          <p class="text-lg">Wireless Printers</p>
-          <p class="text-gray-400">
+          <img
+            src="./assets/indexImage/WirelessPrinter.webp"
+            alt="HomePrinter"
+            class=""
+          />
+          <p style="font-size: 18px">Wireless Printers</p>
+          <p style="color: #9ca3af">
             Connect your Wi-Fi printer to your device or network so that you can
             print from anywhere in your home or office without needing to be in
             the room
           </p>
         </div>
         <div class="printer-item">
-          <img src="./assets/MegatankPrinters.webp" alt="HomePrinter" />
-          <p class="text-lg">MegaTank Printers</p>
-          <p class="text-gray-400">
+          <img
+            src="./assets/indexImage/MegatankPrinters.webp"
+            alt="HomePrinter"
+          />
+          <p style="font-size: 18px">MegaTank Printers</p>
+          <p style="color: #9ca3af">
             Enjoy high quality performance, low cost prints and ultimate
             convenience with the series of refillable ink tank printers.
           </p>
         </div>
       </div>
 
-      <div class="flex items-center justify-center mt-8">
-        <a href="./products.html" class="btn btn-primary w-[10rem] scale-110"
-          >Buy now</a
-        >
+      <style>
+        .center-button {
+          display: flex;
+          margin-top: 2rem;
+          justify-content: center;
+          align-items: center;
+        }
+      </style>
+      <div class="center-button">
+        <a href="./products.html" class="btn btn-primary">Buy now</a>
       </div>
     </section>
 

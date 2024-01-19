@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "CabinetGrotesk";
+  src: url("/fonts/CabinetGrotesk-Variable.woff2");
+}
+body {
+  font-family: "CabinetGrotesk";
+}
+
 /* navbar styles */
 .page-nav {
   position: sticky;
