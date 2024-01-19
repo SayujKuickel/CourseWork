@@ -11,7 +11,6 @@ body {
   margin: 0;
 }
 
-
 .icons-container {
   display: flex;
   align-items: center;
@@ -24,67 +23,143 @@ body {
   user-select: none;
 }
 .icons-container .material-symbols-outlined:hover {
-  color: #ff4d4d; /* Red color on hover */
+  color: #ff4d4d;
 }
 
+/*  */
+/*  */
+/*  */
 
 .video-section {
   position: relative;
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 960px;
+  height: 900px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
 }
+
 .video-section video {
   width: 100%;
   object-fit: cover;
 }
 
+/*  */
+/*  */
+/*  */
+
+.banner-description-section {
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.banner-description-section img {
+  object-fit: cover;
+  width: 100%;
+  filter: brightness(0.5);
+  height: 500px;
+}
+.banner-description-section .content-wrapper {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding-top: 0.75rem;
+  transform: translate(-50%, -50%);
+  padding-bottom: 0.75rem;
+  flex-direction: column;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+.banner-description-section .content-wrapper h1 {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #ffffff;
+}
+.banner-description-section .content-wrapper p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+.banner-description-section .content-wrapper button {
+  margin-top: 2rem;
+}
+
+/*  */
+/*  */
+/*  */
 .desc-wrapper {
   display: flex;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 9rem;
+  margin-bottom: 9rem;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  margin-top: 36px;
-
+  align-items: center;
 }
-
 .desc-wrapper-inner {
-  width: 700px;
-  text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
   align-items: center;
+  text-align: center;
+  width: 700px;
 }
-
 .desc-wrapper-inner h1 {
-  font-size: 36px;
-  font-weight: bold;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
-
 .desc-wrapper-inner p {
-  font-size: 1.5rem;
+  font-size: 20px;
+  line-height: 28px;
 }
-
 .desc-wrapper-inner button {
-  margin-top: 8px;
+  margin-top: 32px;
 }
 
+/*  */
+/*  */
+/*  */
 
-
-
-
-
-
-
-
-
-
-
-footer {
-  height: 300px;
+.printers-wrapper {
+  padding-left: 6rem;
+  padding-right: 6rem;
+  margin-top: 8rem;
+}
+.printers-wrapper > h1 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 500;
+}
+.printers-wrapper > p {
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.printers-wrapper .printers-row {
+  display: flex;
+  margin-top: 0.75rem;
+  justify-content: space-between;
+  width: 100%;
+}
+.printers-wrapper .printers-row .printer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  cursor: pointer;
+  width: 400px;
 }
 
-
+.printers-wrapper .printers-row .printer-item:hover {
+  scale: 1.02;
+}

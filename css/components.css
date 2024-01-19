@@ -4,7 +4,6 @@
   background-color: white;
   top: 0;
   z-index: 100;
-  /* width: 100%; */
   font-weight: 100;
   font-size: 20px;
   height: 80px;
@@ -17,7 +16,7 @@
 
 .logo-container {
   display: flex;
-  align-items: center;  
+  align-items: center;
   user-select: none;
 }
 
@@ -44,23 +43,23 @@
   transition: color 0.3s;
   text-decoration: none;
   color: black;
-
 }
 
 .nav-links a:hover {
   color: #ff4d4d; /* Red color on hover */
 }
-.nav-links a::after{
+.nav-links a::after {
   display: block;
-  content: '';
+  content: "";
   border-bottom: #ff4d4d solid 3px;
   transform: scaleX(0);
   transition: ease-in-out 200ms transform;
-
 }
-.nav-links a:hover::after{ transform: scaleX(1);}
-/*  */
+.nav-links a:hover::after {
+  transform: scaleX(1);
+}
 
+/*  */
 
 .btn {
   padding: 12px 28px;
@@ -91,5 +90,26 @@
 }
 
 .discount {
-  color: #34D399; 
+  color: #34d399;
+}
+
+/*  */
+/* page half banner */
+/*  */
+.page-half-banner {
+  padding-inline: 80px;
+  margin-block: 40px;
+}
+.page-half-banner h1 {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 700;
+}
+.page-half-banner .navigation {
+  color: rgb(156 163 175);
+  text-transform: capitalize;
+}
+.page-half-banner .active {
+  color: black;
+  text-transform: capitalize;
 }
