@@ -3,70 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./css/index.css" rel="stylesheet" />
-    <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet"
-    />
-    
+
     <link rel="stylesheet" href="./css/components.css" />
-    <link rel="stylesheet" href="./css/products.css">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- js -->
-    <script src="./products.js"  ></script>
-
-
+    <link rel="stylesheet" href="./css/products.css" />
 
     <title>Document</title>
   </head>
   <body>
-    <nav class="page-nav">
+    <header class="page-nav">
       <div class="logo-container">
-        <span class="material-symbols-outlined">print</span>
+        <img src="./assets/icons/printer.svg" alt="logo" />
         <p>Printify</p>
       </div>
 
-      <div class="nav-links">
-        <a href="#">HOME</a>
-        <a href="#">BLOG</a>
+      <nav class="nav-links">
+        <a href="./index.html">HOME</a>
         <a href="#">SHOP</a>
-        <a href="#">ABOUT US</a>
-        <a href="#">CONTACT</a>
-      </div>
+        <a href="./blog.html">BLOG</a>
+        <a href="./about-us.html">ABOUT US</a>
+        <a href="./contact.html">CONTACT</a>
+        <a href="./research.html">research</a>
+      </nav>
 
-      <div class="icons-container">
-        <span class="material-symbols-outlined">search</span>
-        <span class="material-symbols-outlined">settings</span>
-        <span class="material-symbols-outlined">shopping_cart</span>
-        <a href="/products.html"
-          ><button class="btn btn-primary">Shop Now</button></a
-        >
-      </div>
-    </nav>
-    <style type="text/tailwindcss">
-      @layer utilities {
-        .page-half-banner {
-          @apply px-20 my-10;
-        }
-        .page-half-banner h1 {
-          @apply text-4xl font-bold;
-        }
-        .page-half-banner .navigation {
-          @apply text-gray-400;
-        }
-        .page-half-banner .active {
-          @apply text-black;
-        }
-      }
-    </style>
+      <nav class="icons-container">
+        <img src="./assets/icons/search.svg" alt="logo" />
+        <img src="./assets/icons/shoppingCard.svg" alt="logo" />
+        <img src="./assets/icons/settings-icon.svg" alt="logo" />
+
+        <a href="./products.html">
+          <button class="btn btn-primary">Shop Now</button>
+        </a>
+      </nav>
+    </header>
 
     <section class="page-half-banner">
       <h1>Printers</h1>
@@ -74,41 +42,7 @@
         <a href="index.html">Home</a> / <span class="active">products</span>
       </p>
     </section>
-    <style type="text/tailwindcss">
-      @layer utilities {
-        .main-content {
-          @apply px-20;
-        }
-        .products-wrapper {
-          @apply flex flex-wrap gap-4;
-        }
-        .product-item {
-          @apply w-[18rem] px-4 py-2 rounded-md transition-all;
-        }
-        .product-item:hover {
-          @apply bg-gray-800/5 scale-105 cursor-pointer ; 
-        }
-
-        .product-item img {
-          @apply w-full aspect-[1] bg-cover;
-        }
-
-        .product-item .item-body {
-          @apply py-2 text-center border-t-gray-100 border-t;
-        }
-        .product-item .item-body .discount {
-          @apply text-green-400;
-        }
-      }
-    </style>
-    <section class="main-content">
-      <div class="products-wrapper">
-  
-
-      </div>
-    </section>
 
     <footer class="mt-36 bg-red-50 h-10"></footer>
-
   </body>
 </html>

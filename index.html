@@ -3,50 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./css/index.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
 
     <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/index.css" />
 
-    <!-- <link rel="stylesheet" href="/css/index.css" /> -->
-
-    <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
   </head>
   <body>
-    <nav class="page-nav">
+    <header class="page-nav">
       <div class="logo-container">
-        <span class="material-symbols-outlined">print</span>
+        <img src="./assets/icons/printer.svg" alt="logo" />
         <p>Printify</p>
       </div>
 
-      <div class="nav-links">
+      <nav class="nav-links">
         <a href="#">HOME</a>
-        <a href="#">BLOG</a>
-        <a href="#">SHOP</a>
-        <a href="#">ABOUT US</a>
-        <a href="#">CONTACT</a>
-      </div>
+        <a href="./products.html">SHOP</a>
+        <a href="./blog.html">BLOG</a>
+        <a href="./about-us.html">ABOUT US</a>
+        <a href="./contact.html">CONTACT</a>
+        <a href="./research.html">research</a>
+      </nav>
 
-      <div class="icons-container">
-        <span class="material-symbols-outlined">search</span>
-        <span class="material-symbols-outlined">settings</span>
-        <span class="material-symbols-outlined">shopping_cart</span>
-        <a href="/products.html"
-          ><button class="btn btn-primary">Shop Now</button></a
-        >
-      </div>
-    </nav>
+      <nav class="icons-container">
+        <img src="./assets/icons/search.svg" alt="logo" />
+        <img src="./assets/icons/shoppingCard.svg" alt="logo" />
+        <img src="./assets/icons/settings-icon.svg" alt="logo" />
 
+        <a href="./products.html">
+          <button class="btn btn-primary">Shop Now</button>
+        </a>
+      </nav>
+    </header>
 
     <section class="video-section">
       <video loop autoplay muted>
@@ -54,25 +42,6 @@
       </video>
     </section>
 
-    <style type="text/tailwindcss">
-      @layer utilities {
-        .desc-wrapper {
-          @apply flex flex-col items-center justify-center my-36 py-8;
-        }
-        .desc-wrapper-inner {
-          @apply w-[700px] text-center flex flex-col gap-4 items-center;
-        }
-        .desc-wrapper-inner h1 {
-          @apply text-4xl font-bold;
-        }
-        .desc-wrapper-inner p {
-          @apply text-xl;
-        }
-        .desc-wrapper-inner button {
-          @apply mt-8;
-        }
-      }
-    </style>
     <section class="desc-wrapper">
       <div class="desc-wrapper-inner">
         <h1>Stylish Solutions</h1>
@@ -85,30 +54,11 @@
       </div>
     </section>
 
-    <style type="text/tailwindcss">
-      @layer utilities {
-        .banner-description-section {
-          @apply relative my-8;
-        }
-        .banner-description-section img {
-          @apply w-full h-[500px] object-cover brightness-50;
-        }
-        .banner-description-section .content-wrapper {
-          @apply flex flex-col items-center justify-center gap-3 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-full text-center py-3;
-        }
-        .banner-description-section .content-wrapper h1 {
-          @apply text-5xl text-white font-bold;
-        }
-        .banner-description-section .content-wrapper p {
-          @apply text-xl font-semibold text-white;
-        }
-        .banner-description-section .content-wrapper button {
-          @apply mt-8;
-        }
-      }
-    </style>
     <section class="banner-description-section">
-      <img src="./assets/bg.webp" alt="bg" class="" />
+      <img
+        src="./assets/indexImage/bg.webp"
+        alt="background image for print your heart out section"
+      />
       <!-- 569 x 295 -->
       <div class="content-wrapper">
         <h1>Print Your Heart out!</h1>
@@ -122,25 +72,6 @@
       </div>
     </section>
 
-    <style type="text/tailwindcss">
-      @layer utilities {
-        .printers-wrapper {
-          @apply mt-32 px-24;
-        }
-        .printers-wrapper > h1 {
-          @apply text-3xl font-[500];
-        }
-        .printers-wrapper > p {
-          @apply text-lg mb-8;
-        }
-        .printers-wrapper .printers-row {
-          @apply w-full flex justify-between mt-3;
-        }
-        .printers-wrapper .printers-row .printer-item {
-          @apply w-[400px] flex flex-col gap-1 cursor-pointer hover:scale-105 transition-all;
-        }
-      }
-    </style>
     <section class="printers-wrapper">
       <h1>Printer Ranges</h1>
       <p>
@@ -149,36 +80,53 @@
       </p>
       <div class="printers-row">
         <div class="printer-item">
-          <img src="./assets/HomePrinter.webp" alt="HomePrinter" class="" />
-          <p class="text-lg">Portable Printers</p>
-          <p class="text-gray-400">
+          <img
+            src="./assets/indexImage/HomePrinter.webp"
+            alt="HomePrinter"
+            class=""
+          />
+          <p style="font-size: 18px">Portable Printers</p>
+          <p style="color: #9ca3af">
             Print memories on-the-go with a small and lightweight portable
             printer.
           </p>
         </div>
         <div class="printer-item">
-          <img src="./assets/WirelessPrinter.webp" alt="HomePrinter" class="" />
-          <p class="text-lg">Wireless Printers</p>
-          <p class="text-gray-400">
+          <img
+            src="./assets/indexImage/WirelessPrinter.webp"
+            alt="HomePrinter"
+            class=""
+          />
+          <p style="font-size: 18px">Wireless Printers</p>
+          <p style="color: #9ca3af">
             Connect your Wi-Fi printer to your device or network so that you can
             print from anywhere in your home or office without needing to be in
             the room
           </p>
         </div>
         <div class="printer-item">
-          <img src="./assets/MegatankPrinters.webp" alt="HomePrinter" />
-          <p class="text-lg">MegaTank Printers</p>
-          <p class="text-gray-400">
+          <img
+            src="./assets/indexImage/MegatankPrinters.webp"
+            alt="HomePrinter"
+          />
+          <p style="font-size: 18px">MegaTank Printers</p>
+          <p style="color: #9ca3af">
             Enjoy high quality performance, low cost prints and ultimate
             convenience with the series of refillable ink tank printers.
           </p>
         </div>
       </div>
 
-      <div class="flex items-center justify-center mt-8">
-        <a href="./products.html" class="btn btn-primary w-[10rem] scale-110"
-          >Buy now</a
-        >
+      <style>
+        .center-button {
+          display: flex;
+          margin-top: 2rem;
+          justify-content: center;
+          align-items: center;
+        }
+      </style>
+      <div class="center-button">
+        <a href="./products.html" class="btn btn-primary">Buy now</a>
       </div>
     </section>
 
