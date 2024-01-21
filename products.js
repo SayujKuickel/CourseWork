@@ -1,4 +1,3 @@
-
 // const products = [
 //     {
 //       "id": 1,
@@ -81,90 +80,70 @@
 //       "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
 //       "rating": { "rate": 3.3, "count": 203 }
 //     },
-   
-// ]  
-const fetchProducts = async ()=>{
 
-    
-    const res = await fetch('https://fakestoreapi.com/products')
+// ]
+const fetchProducts = async () => {
+    const res = await fetch("https://fakestoreapi.com/products");
 
-    const products = await res.json()
-    console.log('prducts' , products);
-    const productContainer  = document.querySelector('.products-wrapper');
+    const products = await res.json();
+    console.log("prducts", products);
+    const productContainer = document.querySelector(".products-wrapper");
     console.log(products);
-    products.forEach((product)=>{
-        const generateProduct = createProduct(product)
+    
+    products.forEach((product) => {
+        const generateProduct = createProduct(product);
         productContainer.appendChild(generateProduct);
-    })
-        // Check if generateProduct is a valid DOM node before appending
-    // const productsWrapper = document.getElementsByClassName("products-wrapper");
+    });
+};
+
+fetchProducts();
+
+
+
+function createProduct(details) {
+  console.log("details in create", details.price);
+  const productComponent = document.createElement("div");
+  productComponent.classList.add("product-item");
+
+  const linkToProduct = document.createElement("a");
+  linkToProduct.href = "/product/product.html?id=" + details.id;
+
+  const productImage = document.createElement("img");
+  productImage.src = details.image;
+
+  const itemBody = document.createElement("div");
+  itemBody.classList.add("item-body");
+
+  const productName = document.createElement("h3");
+  productName.textContent = details.title;
+  const prodPrice = document.createElement("p");
+
+  const price = document.createElement("span");
+  price.textContent = "$" + details.price;
+  const discount = document.createElement("span");
+  discount.textContent = "-20%";
+  discount.classList.add("discount");
+
+  const buttonAnchor = document.createElement("a");
+  buttonAnchor.href = "/products.html";
+  const button = document.createElement("button");
+  button.textContent = "Add to Cart";
+  button.classList.add("btn");
+
+  // making structure
+  productComponent.appendChild(linkToProduct);
+
+  linkToProduct.appendChild(productImage);
+  linkToProduct.appendChild(itemBody);
+
+  itemBody.appendChild(productName);
+  itemBody.appendChild(prodPrice);
+  itemBody.appendChild(buttonAnchor);
+
+  buttonAnchor.appendChild(button);
+
+  prodPrice.appendChild(price);
+  prodPrice.appendChild(discount);
+
+  return productComponent;
 }
-
-
-function createProduct(details){
-    console.log('details in create', details.price);
-    const productComponent = document.createElement('div');
-    productComponent.classList.add('product-item')
-    
-    const linkToProduct = document.createElement('a');
-    linkToProduct.href='/product/product.html?hello=world'
-
-    const productImage =  document.createElement('img');
-    productImage.src = details.image;
-
-    const itemBody  = document.createElement('div')
-    itemBody.classList.add('item-body');
-    
-    const productName = document.createElement('h3');
-    productName.textContent= details.title;
-    const pricePtag = document.createElement('p');
-
-    const price = document.createElement('span');
-    price.textContent = "$"+details.price;
-    const discount = document.createElement('span');
-    discount.textContent = "-20%";
-    discount.classList.add('discount')
-
-    const buttonAnchor = document.createElement('a')
-    buttonAnchor.href='/products.html';
-    const button = document.createElement('button')
-    button.textContent = "Add to Cart"
-    button.classList.add('btn')
-
-    // making structure
-    productComponent.appendChild(linkToProduct);
-
-    linkToProduct.appendChild(productImage);
-    linkToProduct.appendChild(itemBody);
-
-    itemBody.appendChild(productName);
-    itemBody.appendChild(pricePtag);
-    itemBody.appendChild(buttonAnchor)
-
-    buttonAnchor.appendChild(button);
-
-    pricePtag.appendChild(price);
-    pricePtag.appendChild(discount)
-
-
-    return productComponent
-
-}
-
-
-
-
-
-
-
-
-
-function  showProducts(){
-
-
-
-}
-
-
-
-fetchProducts()
