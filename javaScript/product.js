@@ -143,7 +143,7 @@ function detailsFill() {
 
 function createProduct(details) {
   const productComponent = document.createElement("div");
-  productComponent.classList.add("product-item", "slideProduct");
+  productComponent.classList.add("product-item");
 
   const linkToProduct = document.createElement("a");
   linkToProduct.href = "/product/product.html?id=" + details.id;
@@ -156,16 +156,26 @@ function createProduct(details) {
 
   const productName = document.createElement("h3");
   productName.textContent = details.title;
+
   const prodPrice = document.createElement("p");
+  prodPrice.className = "price-row";
 
   const price = document.createElement("span");
-  price.textContent = "$" + details.price;
-  const discount = document.createElement("span");
-  discount.textContent = "-20%";
-  discount.classList.add("discount");
+
+  price.textContent = "$" + details.price.toFixed(2);
+  prodPrice.appendChild(price);
+
+  if (details.discount) {
+    const discount = document.createElement("span");
+    discount.textContent = `-${details.discount}%`;
+
+    discount.classList.add("discount");
+    prodPrice.appendChild(discount);
+  }
 
   const buttonAnchor = document.createElement("a");
   buttonAnchor.href = "/products.html";
+
   const button = document.createElement("button");
   button.textContent = "Add to Cart";
   button.classList.add("btn");
@@ -180,9 +190,6 @@ function createProduct(details) {
   itemBody.appendChild(buttonAnchor);
 
   buttonAnchor.appendChild(button);
-
-  prodPrice.appendChild(price);
-  prodPrice.appendChild(discount);
 
   return productComponent;
 }

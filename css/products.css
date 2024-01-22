@@ -16,12 +16,6 @@ main {
   gap: 16px;
 }
 
-.price-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
 .product-item {
   width: 288px;
   height: 420px;
