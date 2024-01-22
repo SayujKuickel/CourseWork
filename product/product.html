@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/product.css" />
+
+    <script src="../javaScript/product.js" defer></script>
+    <script src="../javaScript/slider.js" defer></script>
+    <script src="../javaScript/quantity-component.js" defer></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="page-nav">
+      <div class="logo-container">
+        <img src="../assets/icons/printer.svg" alt="logo" />
+        <p>Printify</p>
+      </div>
+
+      <nav class="nav-links">
+        <a href="../index.html">HOME</a>
+        <a href="../products.html">SHOP</a>
+        <a href="../blog.html">BLOG</a>
+        <a href="../about-us.html">ABOUT US</a>
+        <a href="../contact.html">CONTACT</a>
+        <a href="../research.html">research</a>
+      </nav>
+
+      <nav class="icons-container">
+        <img src="../assets/icons/search.svg" alt="logo" />
+        <img src="../assets/icons/shoppingCard.svg" alt="logo" />
+        <img src="../assets/icons/settings-icon.svg" alt="logo" />
+
+        <a href="./products.html">
+          <button class="btn btn-primary">Shop Now</button>
+        </a>
+      </nav>
+    </header>
+    <main>
+      <section class="page-half-banner">
+        <h1>Prod Name</h1>
+        <p class="navigation">
+          <a href="index.html">Home</a> / <span class="active">products</span>
+        </p>
+      </section>
+      <div class="product-desc">
+        <div class="product-image"></div>
+        <div class="product-details">
+          <p style="font-size: 35px" id="prodTitle"></p>
+          <p style="font-size: 20px" id="prodPrice"></p>
+          <p>Review</p>
+          <p>
+            <span style="display: block; font-weight: 600; color: black"
+              >Quick Overview:</span
+            >
+            <span style="color: rgb(71, 71, 71)" id="prodDescription">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Exercitationem molestias omnis recusandae sit rerum dolorem
+              commodi, voluptates, molestiae, quia itaque perferendis aperiam
+              placeat. Neque placeat fugit autem, mollitia voluptatem eligendi.
+            </span>
+          </p>
+
+          <div>
+            <div style="display: flex; align-items: center">
+              <span>Quantity:</span>
+
+              <div class="quantity-component">
+                <img src="../assets/icons/ArrowLeft.svg" id="qty-decrement" />
+                <p id="quantity-container"></p>
+                <img src="../assets/icons/ArrowRight.svg" id="qty-increment" />
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <button class="btn btn-primary" style="margin-right: 20px">
+              Add To Cart
+            </button>
+
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="more-products-container">
+        <p style="font-size: xx-large; margin-bottom: 50px">More Products</p>
+        <div>
+          <!-- <button> -->
+          <img src="../assets/icons/ArrowLeft.svg" id="leftBtn" />
+          <!-- </button> -->
+
+          <div class="slider" id="slider">
+            <div id="more-products"></div>
+          </div>
+          <!-- <button> -->
+          <img src="../assets/icons/ArrowRight.svg" id="rightBtn" />
+          <!-- </button> -->
+        </div>
+      </div>
+    </main>
+    <footer style="margin: 50px">Footer</footer>
+  </body>
+</html>
