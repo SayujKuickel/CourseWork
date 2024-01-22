@@ -17,6 +17,28 @@
 
     <script src="./javaScript/formvalid.js"></script>
 
+    <style>
+      .contact-row {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .contact-row img {
+        height: 26px;
+      }
+
+      #successComponent {
+        position: absolute;
+        right: 10%;
+        top: 10%;
+        padding: 22px 40px;
+        background-color: #fafafa;
+        border-radius: 12px;
+        box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+        display: none;
+      }
+    </style>
+
     <title>Document</title>
   </head>
   <body>
@@ -52,18 +74,36 @@
         <a href="./index.html">Home</a> / <span class="active">Contact</span>
       </p>
     </section>
+
+    <section id="successComponent">
+      <p>
+        Dear <span id="successMsgName" style="font-weight: bolder">test</span>,
+      </p>
+      <p>Your Message was submitted!</p>
+    </section>
+
     <section class="container">
       <div class="heading">
         <h1>Contact Details</h1>
 
         <div class="details">
           <h3>Office Address</h3>
-          <p><i class="fa-solid fa-location-dot"></i> Thamel,Kathmandu</p>
+          <p class="contact-row">
+            <img
+              src="./assets/icons/location.svg"
+              alt="location"
+              style="display: inline"
+            />
+            Thamel,Kathmandu
+          </p>
           <hr />
           <h3>Contact Info</h3>
-          <p><i class="fa-solid fa-phone"></i> 9810000221</p>
-          <p><i class="fa-regular fa-envelope"></i> Shopify@gmail.com</p>
-          <p><i class="fa-brands fa-instagram"></i> Shopify</p>
+          <p class="contact-row">
+            <img src="./assets/icons/phone.svg" alt="" /> 9810000221
+          </p>
+          <p class="contact-row">
+            <img src="./assets/icons/mail.svg" alt="" /> Shopify@gmail.com
+          </p>
         </div>
       </div>
 
@@ -71,7 +111,7 @@
         <div class="name">
           <label for="name">Name:</label>
           <span class="error-text" style="display: none" id="name-err">
-            The Name cannot be empty
+            The Name field cannot be empty*
           </span>
           <input
             type="text"
@@ -84,7 +124,7 @@
         <div class="email">
           <label for="name">Email:</label>
           <span class="error-text" style="display: none" id="email-err">
-            The email cannot be empty
+            The Email field cannot be empty*
           </span>
           <input
             type="text"
@@ -97,7 +137,7 @@
         <div class="message">
           <label for="name">Comment:</label>
           <span class="error-text" style="display: none" id="message-err">
-            The message cannot be empty
+            The Message field cannot be empty*
           </span>
           <textarea
             id="message"
