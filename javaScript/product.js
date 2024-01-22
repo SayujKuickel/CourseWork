@@ -111,14 +111,11 @@ const products = [
   },
 ];
 
-window.addEventListener("load", function () {
-  detailsFill();
-});
-
 const urlQuery = window.location.search;
 const id = Number(urlQuery.split("=")[1]);
 console.log(id);
 const moreProductContainer = document.getElementById("more-products");
+detailsFill();
 
 for (let i = 0; i < products.length; i++) {
   const component = createProduct(products[i]);
@@ -126,21 +123,22 @@ for (let i = 0; i < products.length; i++) {
 }
 
 function detailsFill() {
+  const product = products.find((p)=>p.id=== id); 
   const imageContainer = document.querySelector(".product-image");
-
+  console.log('prod',product);
+  const imageTag = document.createElement("img");
   imageContainer.appendChild(imageTag);
 
-  const imageTag = document.createElement("img");
   imageTag.alt = "Product Image";
-  imageTag.src = products[id].image;
+  imageTag.src = product.image;
 
   const prodTitle = document.getElementById("prodTitle");
-  prodTitle.innerText = products[id].title;
+  prodTitle.innerText = product.title;
   const prodPrice = document.getElementById("prodPrice");
-  prodPrice.innerText = "$" + products[id].price;
+  prodPrice.innerText = "$" + product.price;
 
   const prodDescription = document.getElementById("prodDescription");
-  prodDescription.innerText = products[id].description;
+  prodDescription.innerText = product.description;
 }
 
 function createProduct(details) {
