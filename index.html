@@ -130,6 +130,77 @@
       </div>
     </section>
 
-    <footer class="mt-36 bg-red-50 h-10"></footer>
+    <footer>
+      <section class="footer-row">
+        <div>
+          <div class="logo-container">
+            <img src="./assets/icons/printer.svg" alt="logo" />
+            <p>Printify</p>
+          </div>
+
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about-us.html">About</a></li>
+            <li><a href="./contact.html">contact</a></li>
+            <li><a href="./blog.html">blog</a></li>
+            <li><a href="./research.html">Research</a></li>
+          </ul>
+        </div>
+        <form onsubmit="return false" class="newsletter-section">
+          <label for="newsletter">Join Our newsletter</label>
+          <span
+            id="newsletter-err-text"
+            style="color: red; font-size: 14px; font-weight: 700"
+          >
+            Field cannot be empty!
+          </span>
+          <div>
+            <input
+              type="email"
+              name="newsletter"
+              id="newsletter"
+              placeholder="Enter Your Email"
+            />
+            <button class="btn" onclick="checkNewsletter()">Subscribe</button>
+          </div>
+        </form>
+      </section>
+      <hr />
+      <section class="footer-row">
+        <p>&copy; <span id="date"></span> printify inc.</p>
+        <ul>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </section>
+      <script>
+        document.getElementById("date").innerHTML = new Date().getFullYear();
+
+        function checkNewsletter() {
+          const errText = document.getElementById("newsletter-err-text");
+          const newsletterLabel = document.getElementById("newsletter").value;
+
+          errText.style.display = "none";
+          errText.innerHTML = "Please enter your email!";
+          errText.style.color = "red";
+
+          if (newsletterLabel == "") {
+            errText.style.display = "block";
+            setTimeout(clearText, 10000);
+            return;
+          }
+
+          errText.innerHTML = "Added Your email to the newsletter";
+          errText.style.color = "green";
+          errText.style.display = "block";
+          setTimeout(clearText, 10000);
+        }
+
+        function clearText() {
+          const errText = document.getElementById("newsletter-err-text");
+          errText.style.display = "none";
+        }
+      </script>
+    </footer>
   </body>
 </html>
