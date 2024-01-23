@@ -204,32 +204,8 @@
       </section>
       <script>
         document.getElementById("date").innerHTML = new Date().getFullYear();
-
-        function checkNewsletter() {
-          const errText = document.getElementById("newsletter-err-text");
-          const newsletterLabel = document.getElementById("newsletter").value;
-
-          errText.style.display = "none";
-          errText.innerHTML = "Please enter your email!";
-          errText.style.color = "red";
-
-          if (newsletterLabel == "") {
-            errText.style.display = "block";
-            setTimeout(clearText, 10000);
-            return;
-          }
-
-          errText.innerHTML = "Added Your email to the newsletter";
-          errText.style.color = "green";
-          errText.style.display = "block";
-          setTimeout(clearText, 10000);
-        }
-
-        function clearText() {
-          const errText = document.getElementById("newsletter-err-text");
-          errText.style.display = "none";
-        }
       </script>
+      <script src="./javaScript/newslettervalid.js"></script>
     </footer>
   </body>
 </html>
