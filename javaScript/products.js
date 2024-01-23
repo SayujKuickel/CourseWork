@@ -161,7 +161,7 @@ function createProduct(details) {
 
   const button = document.createElement("button");
   button.textContent = "Add to Cart";
-  button.classList.add("btn");
+  button.classList.add("add-to-cart");
 
   productComponent.appendChild(linkToProduct);
 

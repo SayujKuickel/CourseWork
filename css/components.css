@@ -97,7 +97,6 @@ video {
   font-weight: 600;
   border: 1px solid rgb(220 38 38);
   font-size: 18px;
-  user-select: none;
   transition-property: all;
   transition-duration: 150ms;
 }
@@ -113,6 +112,32 @@ video {
   cursor: pointer;
   background: rgb(158, 31, 31);
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+/*  */
+/* Add to cart button */
+/*  */
+
+.add-to-cart {
+  padding: 8px 18px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  width: 90%;
+  margin-top: 6px;
+
+  background-color: white;
+  border: 2px solid black;
+  outline: 0;
+
+  transition-property: all;
+  transition-duration: 300ms;
+}
+
+.add-to-cart:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
 }
 
 /*  */

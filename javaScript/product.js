@@ -123,9 +123,9 @@ for (let i = 0; i < products.length; i++) {
 }
 
 function detailsFill() {
-  const product = products.find((p)=>p.id=== id); 
+  const product = products.find((p) => p.id === id);
   const imageContainer = document.querySelector(".product-image");
-  console.log('prod',product);
+  console.log("prod", product);
   const imageTag = document.createElement("img");
   imageContainer.appendChild(imageTag);
 
@@ -178,7 +178,7 @@ function createProduct(details) {
 
   const button = document.createElement("button");
   button.textContent = "Add to Cart";
-  button.classList.add("btn");
+  button.classList.add("add-to-cart");
 
   productComponent.appendChild(linkToProduct);
 
