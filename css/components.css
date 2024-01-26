@@ -22,7 +22,9 @@ video {
   display: block;
 }
 
-/* navbar styles */
+/*  */
+/* Header styles */
+/*  */
 .page-nav {
   position: sticky;
   background-color: white;
@@ -88,6 +90,8 @@ video {
   gap: 16px;
 }
 
+/*  */
+/* PRIMARY BUTTON */
 /*  */
 
 .btn {
@@ -156,6 +160,7 @@ video {
 
 .page-half-banner .navigation {
   color: rgb(156 163 175);
+  margin-top: 12px;
   text-transform: capitalize;
 }
 
@@ -163,7 +168,9 @@ video {
   color: black;
   text-transform: capitalize;
 }
+
 /* product */
+
 .product-item {
   width: 288px;
   height: 420px;
@@ -172,9 +179,9 @@ video {
   border-radius: 6px;
   user-select: none;
   transition-property: all;
-  /* transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
   transition-duration: 300ms;
 }
+
 .slideProduct {
   min-width: 250px;
   min-height: 400px;
