@@ -1,7 +1,7 @@
 function validateForm() {
-  const nameInput = document.getElementById("name").value; // getting the value of the name Field
-  const emailInput = document.getElementById("email").value; // getting the value of the email Field
-  const messageInput = document.getElementById("message").value; // getting the value of the message Field
+  const nameInput = document.getElementById("name"); // getting the value of the name Field
+  const emailInput = document.getElementById("email"); // getting the value of the email Field
+  const messageInput = document.getElementById("message"); // getting the value of the message Field
 
   const nameLabel = document.getElementById("name-err"); // getting the error span for name field
   const emailLabel = document.getElementById("email-err"); // getting the error span for email field
@@ -14,23 +14,32 @@ function validateForm() {
   clearErrorMessages();
 
   // showing the name span if name input is empty
-  if (nameInput == "") {
+  if (nameInput.value == "") {
     nameLabel.style.display = "block";
   }
 
   // showing the email span if email input is empty
-  if (emailInput == "") {
+  if (emailInput.value == "") {
     emailLabel.style.display = "block";
   }
 
   // showing the message span if message input is empty
-  if (messageInput == "") {
+  if (messageInput.value == "") {
     messageLabel.style.display = "block";
   }
 
-  if (nameInput != "" && emailInput != "" && messageInput != "") {
-    successMsgName.innerHTML = nameInput;
+  if (
+    nameInput.value != "" &&
+    emailInput.value != "" &&
+    messageInput.value != ""
+  ) {
+    successMsgName.innerHTML = nameInput.value;
+
     successComponent.style.display = "block";
+
+    messageInput.value = "";
+    emailInput.value = "";
+    nameInput.value = "";
 
     setTimeout(() => {
       successComponent.style.display = "none";

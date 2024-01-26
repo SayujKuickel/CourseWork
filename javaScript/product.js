@@ -173,9 +173,6 @@ function createProduct(details) {
     prodPrice.appendChild(discount);
   }
 
-  const buttonAnchor = document.createElement("a");
-  buttonAnchor.href = "/products.html";
-
   const button = document.createElement("button");
   button.textContent = "Add to Cart";
   button.classList.add("add-to-cart");
@@ -187,9 +184,7 @@ function createProduct(details) {
 
   itemBody.appendChild(productName);
   itemBody.appendChild(prodPrice);
-  itemBody.appendChild(buttonAnchor);
-
-  buttonAnchor.appendChild(button);
+  itemBody.appendChild(button);
 
   return productComponent;
 }
