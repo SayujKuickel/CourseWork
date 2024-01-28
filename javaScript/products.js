@@ -3,7 +3,7 @@ const products = [
     id: 101,
     title: "Epson EcoTank ET-2750 All-in-One Supertank Printer",
     price: 349.99,
-    discount: 15,
+    discount: 2,
     description:
       "Efficient and reliable, the EcoTank ET-2750 offers high-quality printing with refillable ink tanks. Say goodbye to cartridges and enjoy hassle-free printing.",
     category: "electronics",
@@ -14,7 +14,6 @@ const products = [
     id: 102,
     title: "HP LaserJet Pro M404dn Monochrome Laser Printer",
     price: 259.0,
-    discount: 10,
     description:
       "Boost your productivity with the LaserJet Pro M404dn. Fast, reliable, and designed for efficiency, this monochrome laser printer is perfect for office use.",
     category: "electronics",
@@ -25,7 +24,6 @@ const products = [
     id: 103,
     title: "Canon PIXMA TS5320 Wireless All In One Printer",
     price: 129.95,
-    discount: 25,
     description:
       "Experience wireless convenience with the PIXMA TS5320. Print, scan, and copy seamlessly from your devices. Compact design and user-friendly features make it a great choice.",
     category: "electronics",
@@ -36,7 +34,6 @@ const products = [
     id: 104,
     title: "Brother HL-L2380DW Wireless Monochrome Laser Printer",
     price: 199.99,
-    discount: 20,
     description:
       "The HL-L2380DW is a versatile wireless laser printer with advanced features. Enjoy fast printing, mobile device compatibility, and automatic duplex printing.",
     category: "electronics",
@@ -69,7 +66,6 @@ const products = [
     id: 107,
     title: "Lexmark CX517de Color All-In-One Laser Printer",
     price: 449.0,
-    discount: 15,
     description:
       "The CX517de is a high-performance color laser printer with multifunction capabilities. Experience vivid prints, fast speeds, and versatile functionality.",
     category: "electronics",
@@ -102,7 +98,6 @@ const products = [
     id: 110,
     title: "Epson WorkForce Pro WF-4740 Wireless All-in-One Inkjet Printer",
     price: 379.99,
-    discount: 20,
     description:
       "The WorkForce Pro WF-4740 is a high-performance all-in-one inkjet printer. Experience fast printing, versatile features, and wireless connectivity for your office needs.",
     category: "electronics",
