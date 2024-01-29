@@ -23,8 +23,8 @@
 
       #successComponent {
         position: absolute;
-        right: 10%;
-        top: 10%;
+        right: 150px;
+        top: 100px;
         padding: 22px 40px;
         background-color: #fafafa;
         border-radius: 12px;
@@ -69,7 +69,7 @@
       </p>
     </section>
 
-    <section id="successComponent">
+    <section id="successComponent" onclick="hideSuccessComponent()">
       <p>
         Dear <span id="successMsgName" style="font-weight: bolder">test</span>,
       </p>
@@ -204,5 +204,12 @@
       </script>
       <script src="./javaScript/newslettervalid.js"></script>
     </footer>
+
+    <script>
+      function hideSuccessComponent() {
+        const component = document.getElementById("successComponent");
+        component.style.display = "none";
+      }
+    </script>
   </body>
 </html>

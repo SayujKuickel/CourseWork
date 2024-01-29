@@ -43,11 +43,11 @@ function validateForm() {
 
     setTimeout(() => {
       successComponent.style.display = "none";
-    }, 5000);
+    }, 10000);
   }
 
   // hiding the error messages after 5 seconds
-  setTimeout(clearErrorMessages, 10000);
+  setTimeout(clearErrorMessages, 5000);
 }
 
 // function to clear all error messages.
