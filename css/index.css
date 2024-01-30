@@ -18,19 +18,20 @@
 
 /*  */
 /*  */
-/*  */
 
 .banner-description-section {
   position: relative;
   margin-top: 32px;
   margin-bottom: 32px;
 }
+
 .banner-description-section img {
   object-fit: cover;
   width: 100%;
   filter: brightness(0.5);
   height: 500px;
 }
+
 .banner-description-section .content-wrapper {
   display: flex;
   position: absolute;
@@ -53,12 +54,14 @@
   font-weight: 700;
   color: #ffffff;
 }
+
 .banner-description-section .content-wrapper p {
   font-size: 20px;
   line-height: 28px;
   font-weight: 600;
   color: #ffffff;
 }
+
 .banner-description-section .content-wrapper button {
   margin-top: 32px;
 }
@@ -66,6 +69,7 @@
 /*  */
 /*  */
 /*  */
+
 .desc-wrapper {
   display: flex;
   padding-top: 32px;
@@ -84,14 +88,17 @@
   text-align: center;
   width: 700px;
 }
+
 .desc-wrapper-inner h1 {
   font-size: 36px;
   line-height: 40px;
 }
+
 .desc-wrapper-inner p {
   font-size: 20px;
   line-height: 28px;
 }
+
 .desc-wrapper-inner button {
   margin-top: 32px;
 }
@@ -99,52 +106,45 @@
 /*  */
 /* more noow */
 
-.info_container{
+.info_container {
   background-color: rgba(50, 50, 50, 0.064);
-  margin-block: 50px;
+  margin-block: 200px;
 }
+
 .info_child {
   padding-block: 50px;
   display: flex;
   gap: 80px;
- margin-left: 140px ;
- margin-right: 140px ;
-
+  margin-left: 140px;
+  margin-right: 140px;
+  align-items: center;
 }
 
-.info_child > img{
-  height:300px; 
+.info_child > img {
+  height: 400px;
+  object-fit: contain;
+  aspect-ratio: 1;
 }
 
-.info_info{
-  /* background-color: rebeccapurple; */
+.info_info {
   max-width: 1024px;
 }
 
-.info_info :nth-child(1){
-  font-size:  37px;
+.info_info :nth-child(1) {
+  font-size: 37px;
   font-weight: 700;
-  color: red;
-  margin-bottom: 30px;
-}
-.info_info :nth-child(2){
-  font-size: 20px;
-  line-height: 28px;;
-}
-.info_info > button{
-   margin-top:30px ;
+  margin-bottom: 24px;
 }
 
+.info_info :nth-child(2) {
+  font-size: 18px;
+  line-height: 28px;
+}
 
+.info_info > a {
+  margin-top: 30px;
+}
 
-
-
-
-
-
-
-
-/*  */
 /*  */
 /*  */
 
@@ -153,22 +153,26 @@
   padding-right: 96px;
   margin-top: 128px;
 }
+
 .printers-wrapper > h1 {
   font-size: 30px;
   line-height: 36px;
   font-weight: 500;
 }
+
 .printers-wrapper > p {
   margin-bottom: 32px;
   font-size: 18px;
   line-height: 28px;
 }
+
 .printers-wrapper .printers-row {
   display: flex;
   margin-top: 12px;
   justify-content: space-between;
   width: 100%;
 }
+
 .printers-wrapper .printers-row .printer-item {
   display: flex;
   flex-direction: column;

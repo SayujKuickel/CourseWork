@@ -99,11 +99,15 @@ video {
   background: transparent;
   border-radius: 999px;
   font-weight: 600;
+
   border: 1px solid rgb(220 38 38);
   color: rgb(220 38 38);
   font-size: 18px;
   transition-property: all;
   transition-duration: 150ms;
+
+  display: block;
+  width: fit-content;
 }
 
 .btn-primary {
