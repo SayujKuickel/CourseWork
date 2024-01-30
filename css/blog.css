@@ -1,0 +1,33 @@
+.blog-title {
+  font-size: 42px;
+  width: 1000px;
+  margin-inline: auto;
+  margin-bottom: 20px;
+}
+
+.blog-main-image {
+  height: 600px;
+  aspect-ratio: 5/3;
+  margin-inline: auto;
+  object-fit: cover;
+}
+
+.blog-section-title {
+  font-size: 32px;
+  margin-bottom: 18px;
+}
+
+.blog-content {
+  font-size: 18px;
+  width: 950px;
+  margin-inline: auto;
+}
+
+.blog-content p {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.blog-content section {
+  margin-block: 50px;
+}
