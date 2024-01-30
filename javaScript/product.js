@@ -7,7 +7,7 @@ const products = [
     description:
       "Efficient and reliable, the EcoTank ET-2750 offers high-quality printing with refillable ink tanks. Say goodbye to cartridges and enjoy hassle-free printing.",
     category: "electronics",
-    image: "../assets/printers/101.webp",
+    image: "../images/printers/101.webp",
     rating: { rate: 4.2, count: 230 },
   },
   {
@@ -17,7 +17,7 @@ const products = [
     description:
       "Boost your productivity with the LaserJet Pro M404dn. Fast, reliable, and designed for efficiency, this monochrome laser printer is perfect for office use.",
     category: "electronics",
-    image: "../assets/printers/102.webp",
+    image: "../images/printers/102.webp",
     rating: { rate: 4.5, count: 150 },
   },
   {
@@ -27,7 +27,7 @@ const products = [
     description:
       "Experience wireless convenience with the PIXMA TS5320. Print, scan, and copy seamlessly from your devices. Compact design and user-friendly features make it a great choice.",
     category: "electronics",
-    image: "../assets/printers/103.webp",
+    image: "../images/printers/103.webp",
     rating: { rate: 4.0, count: 180 },
   },
   {
@@ -37,7 +37,7 @@ const products = [
     description:
       "The HL-L2380DW is a versatile wireless laser printer with advanced features. Enjoy fast printing, mobile device compatibility, and automatic duplex printing.",
     category: "electronics",
-    image: "../assets/printers/104.webp",
+    image: "../images/printers/104.webp",
     rating: { rate: 4.3, count: 190 },
   },
   {
@@ -48,7 +48,7 @@ const products = [
     description:
       "Add a splash of color to your prints with the C1760NW. This compact color laser printer is perfect for small offices, offering reliable performance and wireless connectivity.",
     category: "electronics",
-    image: "../assets/printers/105.webp",
+    image: "../images/printers/105.webp",
     rating: { rate: 4.1, count: 160 },
   },
   {
@@ -59,7 +59,7 @@ const products = [
     description:
       "The Xpress M2020W delivers sharp monochrome prints wirelessly. Compact and affordable, it's an excellent choice for home offices and small businesses.",
     category: "electronics",
-    image: "../assets/printers/106.webp",
+    image: "../images/printers/106.webp",
     rating: { rate: 4.0, count: 140 },
   },
   {
@@ -69,7 +69,7 @@ const products = [
     description:
       "The CX517de is a high-performance color laser printer with multifunction capabilities. Experience vivid prints, fast speeds, and versatile functionality.",
     category: "electronics",
-    image: "../assets/printers/107.webp",
+    image: "../images/printers/107.webp",
     rating: { rate: 4.4, count: 200 },
   },
   {
@@ -80,7 +80,7 @@ const products = [
     description:
       "The Phaser 6510/DN delivers professional-quality color prints. With network connectivity and duplex printing, it's a reliable choice for office environments.",
     category: "electronics",
-    image: "../assets/printers/108.webp",
+    image: "../images/printers/108.webp",
     rating: { rate: 4.2, count: 170 },
   },
   {
@@ -91,7 +91,7 @@ const products = [
     description:
       "The SP C261SFNw combines color printing, scanning, copying, and faxing in one compact device. Boost your office efficiency with this versatile multifunction printer.",
     category: "electronics",
-    image: "../assets/printers/109.webp",
+    image: "../images/printers/109.webp",
     rating: { rate: 4.3, count: 180 },
   },
   {
@@ -101,7 +101,7 @@ const products = [
     description:
       "The WorkForce Pro WF-4740 is a high-performance all-in-one inkjet printer. Experience fast printing, versatile features, and wireless connectivity for your office needs.",
     category: "electronics",
-    image: "../assets/printers/110.webp",
+    image: "../images/printers/110.webp",
     rating: { rate: 4.5, count: 210 },
   },
 ];

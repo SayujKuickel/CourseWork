@@ -4,33 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./css/components.css" />
-    <link rel="stylesheet" href="./css/products.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/blog.css" />
 
-    <link rel="icon" href="./assets/icons/printer-white.svg" />
-    <title>Printify | Products</title>
+    <link rel="icon" href="../images/icons/printer-white.svg" />
 
-    <script src="./javaScript/products.js" defer></script>
+    <meta
+      name="description"
+      content="This page explains about the positive and negative aspects of technology"
+    />
+    <meta
+      name="authors"
+      content="Sayuj Kuickel, Abhisekh Bhandari, Nowal Jung Baidwar, Subham Khoju Shrestha"
+    />
+    <meta
+      name="keywords"
+      content="printers, ink jet, laser printer, printify printers"
+    />
+    <meta name="contact" content="contact@printify.com" />
 
-    <style>
-      .price-row {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        margin-top: 8px;
-      }
-    </style>
+    <title>Printify | Blog</title>
   </head>
   <body>
     <header class="page-nav">
       <div class="logo-container">
-        <img src="./assets/icons/printer.svg" alt="logo" />
+        <img src="../images/icons/printer.svg" alt="logo" />
         <p>Printify</p>
       </div>
 
       <nav class="nav-links">
         <a href="./index.html">HOME</a>
-        <a href="#">SHOP</a>
+        <a href="./products.html">SHOP</a>
         <a href="./blog.html">BLOG</a>
         <a href="./about-us.html">ABOUT US</a>
         <a href="./contact.html">CONTACT</a>
@@ -38,9 +42,9 @@
       </nav>
 
       <nav class="icons-container">
-        <img src="./assets/icons/search.svg" alt="logo" />
-        <img src="./assets/icons/shoppingCard.svg" alt="logo" />
-        <img src="./assets/icons/settings-icon.svg" alt="logo" />
+        <img src="../images/icons/search.svg" alt="logo" />
+        <img src="../images/icons/shoppingCard.svg" alt="logo" />
+        <img src="../images/icons/settings-icon.svg" alt="logo" />
 
         <a href="./products.html">
           <button class="btn btn-primary">Shop Now</button>
@@ -49,26 +53,41 @@
     </header>
 
     <section class="page-half-banner">
-      <h1>Printers</h1>
+      <h1>Blog</h1>
       <p class="navigation">
-        <a href="index.html">Home</a> / <span class="active">products</span>
+        <a href="../index.html">Home</a> / <span class="active">blog</span>
       </p>
     </section>
 
-    <main>
-      <section class="products-wrapper"></section>
+    <main class="blog-page">
+      <section class="blog-row-1 two-cols">
+        <img src="../images/indexImage/HomePrinter.webp" alt="" />
+        <div class="row-1-content">
+          <h1>
+            Tech-Bonsai Synergy: Navigating the Impact of Technology on Bonsai
+            Plant Sales
+          </h1>
+          <p>
+            In the dynamic landscape of the 21st century, technology's influence
+            on various aspects of our lives is undeniable. This blog will
+            explore the multifaceted impact of technology on the world of bonsai
+            plants, examining both its positive and negative dimensions, and
+            ultimately considering its role in shaping the bonsai market.
+          </p>
+        </div>
+      </section>
     </main>
 
     <footer>
       <section class="footer-row">
         <div>
           <div class="logo-container">
-            <img src="./assets/icons/printer.svg" alt="logo" />
+            <img src="../images/icons/printer.svg" alt="logo" />
             <p>Printify</p>
           </div>
 
           <ul>
-            <li><a href="./index.html">Home</a></li>
+            <li><a href="../index.html">Home</a></li>
             <li><a href="./about-us.html">About</a></li>
             <li><a href="./contact.html">contact</a></li>
             <li><a href="./blog.html">blog</a></li>
@@ -105,7 +124,7 @@
       <script>
         document.getElementById("date").innerHTML = new Date().getFullYear();
       </script>
-      <script src="./javaScript/newslettervalid.js"></script>
+      <script src="../javaScript/newslettervalid.js"></script>
     </footer>
   </body>
 </html>
