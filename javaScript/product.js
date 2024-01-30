@@ -108,8 +108,11 @@ const products = [
 
 const urlQuery = window.location.search;
 const id = Number(urlQuery.split("=")[1]);
+
 console.log(id);
+
 const moreProductContainer = document.getElementById("more-products");
+
 detailsFill();
 
 for (let i = 0; i < products.length; i++) {
@@ -120,17 +123,23 @@ for (let i = 0; i < products.length; i++) {
 function detailsFill() {
   const product = products.find((p) => p.id === id);
   const imageContainer = document.querySelector(".product-image");
+
   console.log("prod", product);
+
   const imageTag = document.createElement("img");
   imageContainer.appendChild(imageTag);
 
-  imageTag.alt = "Product Image";
+  imageTag.alt = "Product Image for " + product.title;
   imageTag.src = product.image;
 
   const prodTitle = document.getElementById("prodTitle");
   prodTitle.innerText = product.title;
+
   const prodPrice = document.getElementById("prodPrice");
   prodPrice.innerText = "$" + product.price;
+
+  const discount = document.getElementById("discount");
+  if (product.discount) discount.innerText = "-" + product.discount + "%";
 
   const prodDescription = document.getElementById("prodDescription");
   prodDescription.innerText = product.description;
