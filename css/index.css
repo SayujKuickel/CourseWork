@@ -97,6 +97,54 @@
 }
 
 /*  */
+/* more noow */
+
+.info_container{
+  background-color: rgba(50, 50, 50, 0.064);
+  margin-block: 50px;
+}
+.info_child {
+  padding-block: 50px;
+  display: flex;
+  gap: 80px;
+ margin-left: 140px ;
+ margin-right: 140px ;
+
+}
+
+.info_child > img{
+  height:300px; 
+}
+
+.info_info{
+  /* background-color: rebeccapurple; */
+  max-width: 1024px;
+}
+
+.info_info :nth-child(1){
+  font-size:  37px;
+  font-weight: 700;
+  color: red;
+  margin-bottom: 30px;
+}
+.info_info :nth-child(2){
+  font-size: 20px;
+  line-height: 28px;;
+}
+.info_info > button{
+   margin-top:30px ;
+}
+
+
+
+
+
+
+
+
+
+
+/*  */
 /*  */
 /*  */
 

@@ -128,9 +128,11 @@ function detailsFill() {
 
   const imageTag = document.createElement("img");
   imageContainer.appendChild(imageTag);
+  // imageContainer.style.backgroundColor = "blue"
 
   imageTag.alt = "Product Image for " + product.title;
   imageTag.src = product.image;
+  // imageTag.style.backgroundColor = "red"
 
   const prodTitle = document.getElementById("prodTitle");
   prodTitle.innerText = product.title;
