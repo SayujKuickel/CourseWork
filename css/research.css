@@ -1,10 +1,11 @@
+/* Video Section */
 .video-section video {
   width: 50%;
-
   margin-left: auto;
   margin-right: auto;
 }
 
+/* Table Styling */
 table {
   width: 90%;
   margin-left: auto;
@@ -15,11 +16,13 @@ table tr th {
   padding-left: 50px;
   padding-right: 50px;
 }
+
 table tr th img {
   margin-top: 12px;
   border: 2px solid black;
 }
 
+/* Section Description */
 .section-description {
   width: 700px;
   text-align: center;
@@ -29,11 +32,13 @@ table tr th img {
   margin-bottom: 150px;
 }
 
+/* Page Title */
 .page-title {
   text-align: center;
   margin-top: 120px;
 }
 
+/* Reference Images */
 .reference-images {
   display: flex;
   flex-wrap: wrap;
@@ -54,6 +59,7 @@ table tr th img {
   object-fit: contain;
   transition: 0.2s ease;
 }
+
 .reference-images > li img:hover {
-  scale: 1.05;
+  transform: scale(1.05);
 }

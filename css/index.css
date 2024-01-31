@@ -1,7 +1,4 @@
-/*  */
-/*  */
-/*  */
-
+/* Video Section */
 .video-section {
   position: relative;
   display: flex;
@@ -16,9 +13,7 @@
   object-fit: cover;
 }
 
-/*  */
-/*  */
-
+/* Banner Description Section */
 .banner-description-section {
   position: relative;
   margin-top: 32px;
@@ -66,10 +61,7 @@
   margin-top: 32px;
 }
 
-/*  */
-/*  */
-/*  */
-
+/* Description Wrapper */
 .desc-wrapper {
   display: flex;
   padding-top: 32px;
@@ -80,6 +72,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .desc-wrapper-inner {
   display: flex;
   flex-direction: column;
@@ -103,9 +96,7 @@
   margin-top: 32px;
 }
 
-/*  */
-/* more noow */
-
+/* Info Container */
 .info_container {
   background-color: rgba(50, 50, 50, 0.064);
   margin-block: 200px;
@@ -145,9 +136,7 @@
   margin-top: 30px;
 }
 
-/*  */
-/*  */
-
+/* Printers Wrapper */
 .printers-wrapper {
   padding-left: 96px;
   padding-right: 96px;
@@ -178,7 +167,6 @@
   flex-direction: column;
   gap: 4px;
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
   cursor: pointer;
   width: 400px;

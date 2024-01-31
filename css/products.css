@@ -1,13 +1,16 @@
+/* Main Content Section */
 .main-content {
   padding-left: 80px;
   padding-right: 80px;
 }
+
 main {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
+/* Products Wrapper */
 .products-wrapper {
   width: 95%;
   display: flex;
@@ -16,6 +19,7 @@ main {
   align-items: center;
 }
 
+/* Product Item */
 .product-item {
   width: 288px;
   height: 420px;
@@ -43,6 +47,7 @@ main {
   margin-bottom: 5px;
 }
 
+/* Item Body */
 .product-item .item-body {
   padding-block: 8px;
   border-top-width: 1px;
