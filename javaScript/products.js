@@ -106,20 +106,27 @@ const products = [
   },
 ];
 
-window.addEventListener("load", function () {
-  showProducts();
-});
+// Call the showProducts function to display the products on the webpage
+showProducts();
 
+// Function to display products on the webpage
 function showProducts() {
+  // Select the HTML element with the class 'products-wrapper'
   const productContainer = document.querySelector(".products-wrapper");
 
+  // Loop through the products array and create product components for each product
   products.forEach((product) => {
+    // Create a product component using the createProduct function
     const generateProduct = createProduct(product);
+
+    // Append the generated product component to the 'products-wrapper' container
     productContainer.appendChild(generateProduct);
   });
 }
 
+// Function to create a product component
 function createProduct(details) {
+  // Create HTML elements for the product component and set their properties
   const productComponent = document.createElement("div");
   productComponent.classList.add("product-item");
 
@@ -139,14 +146,13 @@ function createProduct(details) {
   prodPrice.className = "price-row";
 
   const price = document.createElement("span");
-
   price.textContent = "$" + details.price.toFixed(2);
   prodPrice.appendChild(price);
 
+  // Check if the product has a discount and create a discount element
   if (details.discount) {
     const discount = document.createElement("span");
     discount.textContent = `-${details.discount}%`;
-
     discount.classList.add("discount");
     prodPrice.appendChild(discount);
   }
@@ -155,8 +161,8 @@ function createProduct(details) {
   button.textContent = "Add to Cart";
   button.classList.add("add-to-cart");
 
+  // Append created elements to build the product component
   productComponent.appendChild(linkToProduct);
-
   linkToProduct.appendChild(productImage);
   linkToProduct.appendChild(itemBody);
 
@@ -164,5 +170,6 @@ function createProduct(details) {
   itemBody.appendChild(prodPrice);
   itemBody.appendChild(button);
 
+  // Return the product component
   return productComponent;
 }

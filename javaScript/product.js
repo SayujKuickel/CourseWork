@@ -1,3 +1,4 @@
+//array of product details
 const products = [
   {
     id: 101,
@@ -106,34 +107,43 @@ const products = [
   },
 ];
 
+// Get the query parameter from the URL
 const urlQuery = window.location.search;
+
+// Extract the product id from the URL and convert it to a number
 const id = Number(urlQuery.split("=")[1]);
 
 console.log(id);
 
+// Select the HTML element with the id 'more-products'
 const moreProductContainer = document.getElementById("more-products");
 
+// Call the function to fill the details of the selected product
 detailsFill();
 
+// Loop over the products to create product components and append them to the parent container
 for (let i = 0; i < products.length; i++) {
   const component = createProduct(products[i]);
   moreProductContainer.appendChild(component);
 }
 
+// Fill the details of the selected product according to the id from the products array
 function detailsFill() {
+  // Find the product in the array that matches the given id
   const product = products.find((p) => p.id === id);
   const imageContainer = document.querySelector(".product-image");
 
   console.log("prod", product);
 
+  // Create an image element and append it to the product image container
   const imageTag = document.createElement("img");
   imageContainer.appendChild(imageTag);
-  // imageContainer.style.backgroundColor = "blue"
 
+  // Set alt text, source, and other details for the product image
   imageTag.alt = "Product Image for " + product.title;
   imageTag.src = product.image;
-  // imageTag.style.backgroundColor = "red"
 
+  // Set product title, price, discount, and description in respective HTML elements
   const prodTitle = document.getElementById("prodTitle");
   prodTitle.innerText = product.title;
 
@@ -147,7 +157,9 @@ function detailsFill() {
   prodDescription.innerText = product.description;
 }
 
+// Create a product component with details passed as an argument
 function createProduct(details) {
+  // Create HTML elements for product components and set their properties
   const productComponent = document.createElement("div");
   productComponent.classList.add("product-item");
 
@@ -167,14 +179,13 @@ function createProduct(details) {
   prodPrice.className = "price-row";
 
   const price = document.createElement("span");
-
   price.textContent = "$" + details.price.toFixed(2);
   prodPrice.appendChild(price);
 
+  // Check if the product has a discount and create a discount element
   if (details.discount) {
     const discount = document.createElement("span");
     discount.textContent = `-${details.discount}%`;
-
     discount.classList.add("discount");
     prodPrice.appendChild(discount);
   }
@@ -183,8 +194,8 @@ function createProduct(details) {
   button.textContent = "Add to Cart";
   button.classList.add("add-to-cart");
 
+  // Append created elements to build the product component
   productComponent.appendChild(linkToProduct);
-
   linkToProduct.appendChild(productImage);
   linkToProduct.appendChild(itemBody);
 

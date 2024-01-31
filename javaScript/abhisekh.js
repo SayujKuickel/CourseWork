@@ -43,6 +43,7 @@ const getContainer = document.querySelector(".hard_container");
 for (let i = 0; i < info.length; i++) {
   createNew(info[i]);
 }
+// feed the data to the container hard_container
 function createNew(item) {
   const divTag = document.createElement("div");
   divTag.className = "hard_skill";
