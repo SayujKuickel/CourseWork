@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Metadata for character set and viewport -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Stylesheet links for blog page -->
     <link rel="stylesheet" href="../css/components.css" />
     <link rel="stylesheet" href="../css/blog.css" />
 
+    <!-- Favicon and metadata for SEO -->
     <link rel="icon" href="../images/icons/printer-white.svg" />
-
     <meta
       name="description"
       content="This page explains about the positive and negative aspects of technology"
@@ -23,15 +25,18 @@
     />
     <meta name="contact" content="contact@printify.com" />
 
+    <!-- Page title -->
     <title>Printify | Blog</title>
   </head>
   <body>
+    <!-- Header section -->
     <header class="page-nav">
       <div class="logo-container">
         <img src="../images/icons/printer.svg" alt="logo" />
         <p>Printify</p>
       </div>
 
+      <!-- Navigation links -->
       <nav class="nav-links">
         <a href="./index.html">HOME</a>
         <a href="./products.html">SHOP</a>
@@ -41,6 +46,7 @@
         <a href="./research.html">research</a>
       </nav>
 
+      <!-- Icons and buttons container -->
       <nav class="icons-container">
         <img src="../images/icons/search.svg" alt="logo" />
         <img src="../images/icons/shoppingCard.svg" alt="logo" />
@@ -52,6 +58,7 @@
       </nav>
     </header>
 
+    <!-- Page half banner section -->
     <section class="page-half-banner">
       <h1>Blog</h1>
       <p class="navigation">
@@ -59,7 +66,9 @@
       </p>
     </section>
 
+    <!-- Main content section -->
     <main class="blog-page">
+      <!-- Blog title and main image -->
       <h1 class="blog-title">
         How Technology Shapes Our Lives: Exploring the Positive and Negative
         Effects of Technology
@@ -70,12 +79,14 @@
         alt="technology image"
       />
 
+      <!-- Blog content sections -->
       <div class="blog-content">
         <section>
           <h3 class="blog-section-title" id="technology">
             What is technology actually?
           </h3>
           <p>
+            <!-- Content for the definition of technology -->
             Technology refers to the application of scientific Knowledge for
             practical purposes or application. The use of technology has become
             very common in our daily life. We all have been surrounded by many
@@ -93,9 +104,10 @@
         </section>
         <section>
           <h3 class="blog-section-title" id="technology-advantage">
-            How it can be used for our benifit
+            How it can be used for our benefit
           </h3>
           <p>
+            <!-- Content for the positive impact of technology -->
             The positive impact of Technology are it has expended security,
             Communication has become easier, technology have helped in medical
             field and education field. Most of all technology have helped
@@ -111,9 +123,10 @@
 
         <section>
           <h3 class="blog-section-title" id="technology-disadvantage">
-            But also beware of its conscequences
+            But also beware of its consequences
           </h3>
           <p>
+            <!-- Content for the negative impact of technology -->
             the main negative impact of technology is addiction. People gets
             very attached technology that without technology they cannot do
             anything. Another negative impact is privacy, there is no guarantee
@@ -129,8 +142,10 @@
       </div>
     </main>
 
+    <!-- Footer section -->
     <footer>
       <section class="footer-row">
+        <!-- Logo and navigation links -->
         <div>
           <div class="logo-container">
             <img src="../images/icons/printer.svg" alt="logo" />
@@ -145,6 +160,7 @@
             <li><a href="./research.html">Research</a></li>
           </ul>
         </div>
+        <!-- Newsletter form -->
         <form onsubmit="return false" class="newsletter-section">
           <label for="newsletter">Join Our newsletter</label>
           <span
@@ -165,6 +181,7 @@
         </form>
       </section>
       <hr />
+      <!-- Copyright and links -->
       <section class="footer-row">
         <p>&copy; <span id="date"></span> printify inc. All Rights Reserved.</p>
         <ul>
@@ -172,6 +189,7 @@
           <li><a href="#">Privacy</a></li>
         </ul>
       </section>
+      <!-- JavaScript for current year and newsletter validation -->
       <script>
         document.getElementById("date").innerHTML = new Date().getFullYear();
       </script>

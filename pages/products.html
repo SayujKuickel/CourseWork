@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Stylesheet links for products page -->
     <link rel="stylesheet" href="../css/components.css" />
     <link rel="stylesheet" href="../css/products.css" />
 
+    <!-- Favicon and JavaScript for product functionality -->
     <link rel="icon" href=".../images/icons/printer-white.svg" />
     <title>Printify | Products</title>
-
     <script src="../javaScript/products.js" defer></script>
 
     <meta
@@ -26,6 +27,7 @@
     />
     <meta name="contact" content="contact@printify.com" />
 
+    <!-- Inline CSS styles specific to this page -->
     <style>
       .price-row {
         display: flex;
@@ -36,12 +38,14 @@
     </style>
   </head>
   <body>
+    <!-- Header section -->
     <header class="page-nav">
       <div class="logo-container">
         <img src="../images/icons/printer.svg" alt="logo" />
         <p>Printify</p>
       </div>
 
+      <!-- Navigation links -->
       <nav class="nav-links">
         <a href="../index.html">HOME</a>
         <a href="#">SHOP</a>
@@ -51,6 +55,7 @@
         <a href="./research.html">research</a>
       </nav>
 
+      <!-- Icons and buttons container -->
       <nav class="icons-container">
         <img src="../images/icons/search.svg" alt="logo" />
         <img src="../images/icons/shoppingCard.svg" alt="logo" />
@@ -62,6 +67,7 @@
       </nav>
     </header>
 
+    <!-- Page half banner section -->
     <section class="page-half-banner">
       <h1>Printers</h1>
       <p class="navigation">
@@ -69,11 +75,16 @@
       </p>
     </section>
 
+    <!-- Main content section -->
     <main>
+      <!-- Product wrapper section -->
+      <!-- Content Will be Dynamically Added Here -->
       <section class="products-wrapper"></section>
     </main>
 
+    <!-- Footer section -->
     <footer>
+      <!-- Footer row with logo and navigation links -->
       <section class="footer-row">
         <div>
           <div class="logo-container">
@@ -89,6 +100,8 @@
             <li><a href="./research.html">Research</a></li>
           </ul>
         </div>
+
+        <!-- Newsletter form -->
         <form onsubmit="return false" class="newsletter-section">
           <label for="newsletter">Join Our newsletter</label>
           <span
@@ -108,7 +121,10 @@
           </div>
         </form>
       </section>
+
       <hr />
+
+      <!-- Copyright and links -->
       <section class="footer-row">
         <p>&copy; <span id="date"></span> printify inc. All Rights Reserved.</p>
         <ul>
@@ -116,6 +132,8 @@
           <li><a href="#">Privacy</a></li>
         </ul>
       </section>
+
+      <!-- JavaScript for current year and newsletter validation -->
       <script>
         document.getElementById("date").innerHTML = new Date().getFullYear();
       </script>

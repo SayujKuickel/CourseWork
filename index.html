@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Stylesheet links -->
     <link rel="stylesheet" href="./css/components.css" />
     <link rel="stylesheet" href="./css/index.css" />
 
+    <!-- Favicon -->
     <link rel="icon" href="./images/icons/printer-white.svg" />
 
+    <!-- Meta tags -->
     <meta
       name="description"
       content="This is the home page of our printify website"
@@ -23,15 +26,19 @@
     />
     <meta name="contact" content="contact@printify.com" />
 
+    <!-- Page title -->
     <title>Printify | Home</title>
   </head>
   <body>
+    <!-- Header section -->
     <header class="page-nav">
+      <!-- Logo container -->
       <div class="logo-container">
         <img src="./images/icons/printer.svg" alt="logo" />
         <p>Printify</p>
       </div>
 
+      <!-- Navigation links -->
       <nav class="nav-links">
         <a href="#">HOME</a>
         <a href="./pages/products.html">SHOP</a>
@@ -41,6 +48,7 @@
         <a href="./pages/research.html">research</a>
       </nav>
 
+      <!-- Icons and buttons container -->
       <nav class="icons-container">
         <img src="./images/icons/search.svg" alt="search icon SVG" />
         <img
@@ -55,12 +63,14 @@
       </nav>
     </header>
 
+    <!-- Video section -->
     <section class="video-section">
       <video loop autoplay muted>
         <source src="./images/home-video.mp4" type="video/mp4" />
       </video>
     </section>
 
+    <!-- Description section -->
     <section class="desc-wrapper">
       <div class="desc-wrapper-inner">
         <h1>Our Shop</h1>
@@ -75,9 +85,7 @@
       </div>
     </section>
 
-    <!--  -->
-    <!--  -->
-
+    <!-- Banner description section -->
     <section class="banner-description-section">
       <img
         src="./images/indexImage/bg.webp"
@@ -96,9 +104,7 @@
       </div>
     </section>
 
-    <!--  -->
-    <!--  -->
-
+    <!-- Info container section -->
     <section class="info_container">
       <div class="info_child">
         <img src="./images/aboutus.webp" alt="shop" />
@@ -115,6 +121,7 @@
       </div>
     </section>
 
+    <!-- Printers wrapper section -->
     <section class="printers-wrapper">
       <h1 style="font-weight: 700; font-size: xx-large">Explore Printers</h1>
       <p style="margin-top: 5px">
@@ -122,6 +129,7 @@
         hybrid workspace are built to deliver every time.
       </p>
       <div class="printers-row">
+        <!-- Printer items -->
         <div class="printer-item">
           <img src="./images/indexImage/HomePrinter.webp" alt="HomePrinter" />
           <p style="font-size: 18px; font-weight: 700; margin-top: 12px">
@@ -161,25 +169,13 @@
         </div>
       </div>
 
-      <!--  -->
-      <!--  -->
-
-      <style>
-        .center-button {
-          display: flex;
-          margin-top: 24px;
-          justify-content: center;
-          align-items: center;
-        }
-      </style>
+      <!-- Centered button -->
       <div class="center-button">
         <a href="./pages/products.html" class="btn btn-primary">Buy now</a>
       </div>
     </section>
 
-    <!--  -->
-    <!--  -->
-
+    <!-- Info container section -->
     <section class="info_container">
       <div class="info_child">
         <img src="./images/contactimage.jpg" alt="contact us image" />
@@ -196,9 +192,10 @@
       </div>
     </section>
 
-    <!--  -->
+    <!-- Footer section -->
     <footer>
       <section class="footer-row">
+        <!-- Logo and navigation links -->
         <div>
           <div class="logo-container">
             <img src="./images/icons/printer.svg" alt="logo" />
@@ -213,6 +210,7 @@
             <li><a href="./pages/research.html">Research</a></li>
           </ul>
         </div>
+        <!-- Newsletter form -->
         <form onsubmit="return false" class="newsletter-section">
           <label for="newsletter">Join Our newsletter</label>
           <span
@@ -235,6 +233,7 @@
 
       <hr />
 
+      <!-- Copyright and links -->
       <section class="footer-row">
         <p>&copy; <span id="date"></span> printify inc. All Rights Reserved.</p>
         <ul>
@@ -242,6 +241,7 @@
           <li><a href="#">Privacy</a></li>
         </ul>
       </section>
+      <!-- JavaScript for current year and newsletter validation -->
       <script>
         document.getElementById("date").innerHTML = new Date().getFullYear();
       </script>
